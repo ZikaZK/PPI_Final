@@ -146,7 +146,7 @@ app.get("/cdstrEquipe", verificaLog, (req, res) => {
     `);
 });
 
-app.post("/dcnrEquipe", (req, res) => {
+app.post("/dcnrEquipe", verificaLog, (req, res) => {
     const {eqip, capt, contat} = req.body;
 
     if(eqip && capt && contat){
